@@ -31,7 +31,7 @@ function App() {
   
   const handleAdd = () => {  
     if(todo.length>=3){
-      setTodos([{id:uuidv4(), todo , isCompleted:false},...todos ]);
+      setTodos([...todos,{id:uuidv4(), todo , isCompleted:false} ]);
       setTodo('');
       savetols();
     }
